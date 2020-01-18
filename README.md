@@ -10,7 +10,7 @@ we want to realize the abstraction through Python Django web framework.
 ## Django eCommerce Framework
 The motivation to use a boiler plate framework comes from the fact that, purchase process and customer experience is a vast area to be built from scratch. With the availability of Django eCommerce Framework we are able to extend it to build our cloud native architecture for a digital store. 
 
-<a href="https://django-shop.readthedocs.io/en/stable/index.html"> More info in Django eCommerce Shop Framework </a>
+<a href="https://django-shop.readthedocs.io/en/stable/index.html"> More info on Django eCommerce Shop Framework </a>
 
 ## Blue Green Deployment
 More info on <a href="https://martinfowler.com/bliki/BlueGreenDeployment.html"><b>Blue Green Deployment Pattern</b></a>
