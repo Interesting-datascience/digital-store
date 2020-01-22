@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "fix-checkbox-inline.css",
+	"sources": [
+		"fix-checkbox-inline.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,+EAA+E;AAC/E,AAAA,gBAAgB,CAAC;EAChB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,MAAM,GAOf;EATD,AAGC,gBAHe,CAGf,KAAK,CAAC;IACL,YAAY,EAAE,MAAM,GACpB;EALF,AAMC,gBANe,CAMf,CAAC,CAAC;IACD,OAAO,EAAE,OAAO,GAChB"
+}

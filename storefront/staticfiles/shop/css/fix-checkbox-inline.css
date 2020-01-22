@@ -1,0 +1,9 @@
+/* taken from Bootstrap-3 until django-angular supports Bootstrap-4 natively */
+.checkbox-inline {
+  position: relative;
+  display: inline; }
+  .checkbox-inline input {
+    margin-right: 0.5rem; }
+  .checkbox-inline p {
+    display: initial; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0ZGluIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtFQUErRTtBQUMvRTtFQUNFLG1CQUFtQjtFQUNuQixnQkFBZ0IsRUFBRTtFQUNsQjtJQUNFLHFCQUFxQixFQUFFO0VBQ3pCO0lBQ0UsaUJBQWlCLEVBQUUiLCJmaWxlIjoic3RkaW4iLCJzb3VyY2VzQ29udGVudCI6WyIvKiB0YWtlbiBmcm9tIEJvb3RzdHJhcC0zIHVudGlsIGRqYW5nby1hbmd1bGFyIHN1cHBvcnRzIEJvb3RzdHJhcC00IG5hdGl2ZWx5ICovXG4uY2hlY2tib3gtaW5saW5lIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmU7IH1cbiAgLmNoZWNrYm94LWlubGluZSBpbnB1dCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAwLjVyZW07IH1cbiAgLmNoZWNrYm94LWlubGluZSBwIHtcbiAgICBkaXNwbGF5OiBpbml0aWFsOyB9XG5cbi8qIyBzb3VyY2VNYXBwaW5nVVJMPWZpeC1jaGVja2JveC1pbmxpbmUuY3NzLm1hcCAqLyJdfQ== */

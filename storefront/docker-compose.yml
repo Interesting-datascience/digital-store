@@ -1,0 +1,86 @@
+version: '2.1'
+
+services:
+  postgresdb:
+    restart: always
+    image: postgres:10
+    env_file:
+      - docker-files/databases.environ
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - shopnet
+
+  redishost:
+    image: redis
+    volumes:
+      - 'redisdata:/data'
+    networks:
+      - shopnet
+
+  elasticsearch:
+    image: elasticsearch:1.7.5
+    container_name: elasticsearch
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - shopnet
+
+  webapp:
+    restart: always
+    build:
+      context: .
+      dockerfile: docker-files/webapp.dockerfile
+    image: storefront
+    env_file:
+      - docker-files/databases.environ
+      - docker-files/stripe.environ
+      - docker-files/sendcloud.environ
+    environment:
+      - VIRTUAL_HOST=localhost
+      - DJANGO_DEBUG=1
+      - DJANGO_SETTINGS_MODULE=storefront.settings
+    volumes:
+      - ./:/web
+    entrypoint: /usr/local/bin/entrypoint.sh
+    depends_on:
+      - postgresdb
+      - redishost
+      - elasticsearch
+    networks:
+      - shopnet
+    ports:
+      - 9009:9009
+
+  worker:
+    restart: always
+    image: storefront
+    environment:
+      - DJANGO_SETTINGS_MODULE=storefront.settings
+    env_file:
+      - docker-files/databases.environ
+      - docker-files/email.environ
+    command: /web/worker.py
+    volumes:
+      - ./:/web
+    depends_on:
+      - postgresdb
+      - redishost
+    networks:
+      - shopnet
+
+networks:
+  shopnet:
+
+volumes:
+  pgdata:
+  redisdata:
+  esdata:

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "list-items.css",
+	"sources": [
+		"list-items.scss",
+		"_variables.scss",
+		"../../../../../../../../../web/node_modules/bootstrap/scss/_functions.scss",
+		"../../../../../../../../../web/node_modules/bootstrap/scss/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,eAAe,CAAC;EACf,YAAY,EGOF,OAAO,CFIY,UAAU,GDQvC;EApBD,AAEC,eAFc,CAEZ,KAAK,CAAC;IACP,gBAAgB,EGGP,OAAO,CFKa,UAAU,GDPvC;EAJF,AAME,eANa,CAKd,YAAY,CACX,GAAG,CAAC,WAAW,EANjB,eAAe,CAKd,YAAY,CACM,GAAG,CAAC,UAAU,CAAC;IAC/B,KAAK,EAAE,MAAM;IACb,UAAU,EAAE,KAAK,GACjB;EATH,AAUE,eAVa,CAKd,YAAY,CAKX,KAAK,CAAC;IACL,KAAK,EAAE,IAAI,GACX;EAZH,AAcC,eAdc,CAcd,kBAAkB,CAAC;IAClB,KAAK,EAAE,MAAM,GACb;EAhBF,AAiBC,eAjBc,CAiBd,MAAM,CAAC;IACN,WAAW,EAAE,MAAM,GACnB;;AAGF,AAAA,mBAAmB,CAAC;EACnB,gBAAgB,EAAE,GAAG;EACrB,gBAAgB,EAAE,MAAM;EACxB,gBAAgB,EGjBN,OAAO,CFIY,UAAU,GDcvC"
+}
