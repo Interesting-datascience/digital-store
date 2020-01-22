@@ -1,0 +1,22 @@
+   13  sudo groupadd docker
+   14  sudo usermod -aG docker $USER
+   25  sudo apt install python3
+   32  mkdir cloud-native
+   34  cd cloud-native/
+   79  pip install --user pipenv cookiecutter autopep8
+   39  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6m
+   49  mkdir digital-store
+   50  cd digital-store/
+   52  cookiecutter https://github.com/awesto/cookiecutter-django-shop
+   54  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
+   57  sudo apt install git
+   88  docker-compose up --build -d
+  104  sudo apt install curl
+  106  curl -sSL https://get.docker.com/ | sh
+  107  docker-compose ps
+  108  docker-compose images
+  117  docker tag digital-store epdasa/digital-store:0.0.1
+  118  docker push digital-store
+  119  docker push epdasa/digital-store
+  120  docker-compose up --build -d
+  148  history > ~/how-I-setup-digital-store
