@@ -4,7 +4,7 @@
   "description": "B2B Store",
   "private": true,
   "dependencies": {
-    "angular": "^1.7.8",
+    "angular": "^1.8.0",
     "angular-animate": "^1.7.8",
     "angular-bootstrap-plus": "^0.8.1",
     "angular-i18n": "^1.7.8",
